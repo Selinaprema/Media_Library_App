@@ -1,0 +1,160 @@
+/* Games Page Styling */
+.games-page {
+  background-color: #121212;
+  color: white;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.games-hero-section {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("../Images/Games-hero-image.jpg") center/cover;
+}
+
+.games-hero-section h1 {
+  font-size: 60px;
+  font-family: "Outfit", serif;
+}
+
+/* Search Bar */
+.games-hero-section form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Outfit", serif;
+}
+
+.games-hero-section input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+.games-hero-section button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #e94619;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+.games-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Outfit", serif;
+}
+
+.games-search input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+.games-search button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #e94619;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+/* Content Layout */
+.games-content {
+  display: flex;
+  padding: 20px;
+}
+
+/* Favorites Section */
+.games-favorites-section {
+  width: 20%;
+  padding: 20px;
+  background: #e94619;
+  border-radius: 15px;
+}
+
+.games-fav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.games-fav-item img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.games-fav-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  background: #ed683b;
+  color: white;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+}
+
+/* Games Grid */
+.games-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding-left: 50px;
+}
+
+.games-card {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s; /* To match the hover effect of music cards */
+  font-family: "Outfit", serif;
+}
+
+.games-card:hover {
+  transform: scale(1.05); /* Matching hover effect with music cards */
+}
+
+.games-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.games-card button {
+  margin-top: 10px;
+  background: rgb(65, 62, 62);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px;
+  border-radius: 60px;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .games-content {
+    flex-direction: column;
+  }
+
+  .games-favorites-section,
+  .games-grid {
+    width: 100%;
+  }
+}

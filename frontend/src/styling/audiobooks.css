@@ -1,0 +1,131 @@
+/* General Styling */
+.audiobooks-container {
+  background-color: #121212;
+  color: white;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.audiobooks-hero {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("../Images/Audiobook-hero-image.jpg") center/cover;
+}
+
+.audiobooks-hero h1 {
+  font-size: 60px;
+  font-family: "Outfit", serif;
+}
+
+/* Search Bar */
+.audiobooks-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Outfit", serif;
+}
+
+.audiobooks-search input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+.audiobooks-search button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #e94619;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+/* Content Layout */
+.audiobooks-content {
+  display: flex;
+  padding: 20px;
+}
+
+/* Favorites Section */
+.audiobooks-favorites {
+  width: 20%;
+  padding: 20px;
+  background: #e94619;
+  border-radius: 15px;
+  font-family: "Outfit", serif;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fav-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.fav-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  background: #ed683b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Grid Layout */
+.audiobooks-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding-left: 50px;
+}
+
+/* Audiobook Cards */
+.audiobook-card {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  font-family: "Outfit", serif;
+}
+
+.audiobook-card:hover {
+  transform: scale(1.05);
+}
+
+.audiobook-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.audiobook-card button {
+  margin-top: 10px;
+  padding: 15px;
+  background: #ffffff1a;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 60px;
+  font-family: "Outfit", serif;
+}
+
+/* Styling for book title and artist name */
+.book-title {
+  color: white;
+}
+
+.artist-name {
+  color: #e94619;
+}

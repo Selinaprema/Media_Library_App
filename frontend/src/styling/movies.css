@@ -1,0 +1,130 @@
+/* General Page Styling */
+.movies-page-container {
+  background-color: #121212;
+  color: white;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.movies-hero-section {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url("../Images/Movies-hero-image.jpg") center/cover;
+}
+
+.movies-hero-section h1 {
+  font-size: 60px;
+}
+
+/* Search Bar */
+
+/* Search Bar */
+.movies-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Outfit", serif;
+}
+
+.movies-search input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+.movies-search button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #e94619;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+}
+
+/* Content Layout */
+.movies-main-content {
+  display: flex;
+  padding: 20px;
+}
+
+/* Playlist Section */
+.movies-playlist-section {
+  width: 20%;
+  padding: 20px;
+  background: #e94619;
+  border-radius: 15px;
+  font-family: "Outfit", sans-serif;
+}
+
+.movies-fav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.movies-fav-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.movies-fav-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  background: #df6e4f;
+  color: white;
+  cursor: pointer;
+}
+
+/* Movies Grid */
+.movies-grid-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding-left: 50px;
+}
+
+/* Movie Cards */
+.movies-card {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal; /* Ensure the text is not bold */
+}
+
+.movies-card:hover {
+  transform: scale(1.05);
+}
+
+.movies-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movies-card p {
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: normal; /* Ensure text is not bold */
+}
+
+.movies-card button {
+  margin-top: 10px;
+  padding: 15px;
+  background: #ffffff1a;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 60px;
+  font-family: "Outfit", sans-serif;
+}

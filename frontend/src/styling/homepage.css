@@ -1,0 +1,151 @@
+/* General Page Styling */
+.homepage-container {
+  background-color: #121212;
+  color: white;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.hero-container {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url("../Images/Homepage-Hero-Section.jpg") center/cover;
+}
+
+.hero-container h1 {
+  font-size: 60px;
+  font-family: "Outfit", serif;
+  margin-bottom: 10px;
+}
+
+.hero-container p {
+  font-size: 18px;
+  font-family: "Outfit", serif;
+}
+
+/* Content Layout (Favourites + Categories) */
+.content-container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Favorites Section (30% width) */
+.favorites-section {
+  width: 20%;
+  padding: 20px;
+  background: #e94619;
+  border-radius: 15px;
+  font-family: "Outfit", serif;
+}
+
+/* Category Section (70% width) */
+.category-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  padding-left: 50px;
+}
+
+/* Category Cards */
+.category-card {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative; /* Needed for arrow positioning */
+}
+
+/* Modern Slider */
+.category-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Hide Scrollbar for Chrome, Safari */
+.category-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Category Items */
+.category-item {
+  min-width: 150px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+}
+
+.category-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.category-item button {
+  margin-top: 10px;
+  padding: 15px;
+  background: #ffffff1a;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: out;
+  border-radius: 50px;
+  font-family: "Outfit", serif;
+}
+
+.track-name {
+  color: white;
+}
+
+.artist-name {
+  color: #e94619;
+}
+
+/* Slider Arrows */
+.slider-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  z-index: 10;
+}
+
+/* Left Arrow */
+.left-arrow {
+  left: -30px;
+}
+
+/* Right Arrow */
+.right-arrow {
+  right: -30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .favorites-section,
+  .category-section {
+    width: 100%;
+  }
+
+  .slider-arrow {
+    display: none; /* Hide arrows on small screens */
+  }
+}
